@@ -24,7 +24,7 @@ export async function PUT(req: NextRequest){
         const LIMIT = 10
         const WINDOW_MS = 60 * 60 * 1000
 
-        const { success, remaining, resetTime } = rateLimit({
+        const { success, resetTime } = rateLimit({
             key: `volunteer-application:${session.user.id}`,
             limit: LIMIT,
             windowMs: WINDOW_MS
@@ -71,10 +71,10 @@ export async function PUT(req: NextRequest){
             success: true,
             data: result
         })
-    } catch (error: any) {
+    } catch (error) {
         console.error("Avatar upload error:", error)
         return NextResponse.json(
-            { message: "Internal Server Error", error: error.message || String(error) },
+            { message: "Internal Server Error", error },
             { status: 500 }
         )
     }

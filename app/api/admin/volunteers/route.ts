@@ -56,9 +56,6 @@ export async function PATCH(request: NextRequest) {
         if (!db) throw new Error("MongoDB connection is not ready.");
 
         const userId = String(application.userId);
-        const userIdCandidates: Array<string | mongoose.Types.ObjectId> = [
-          userId,
-        ];
         if (!mongoose.Types.ObjectId.isValid(userId)) {
           throw new Error("Invalid user ID.");
         }

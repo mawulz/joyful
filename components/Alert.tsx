@@ -7,7 +7,7 @@ export function AlertNotif() {
         <Alert.Content>
           <Alert.Title>Unable to connect to server</Alert.Title>
           <Alert.Description>
-            We're experiencing connection issues. Please try the following:
+            We&#39;re experiencing connection issues. Please try the following:
             <ul className="mt-2 list-inside list-disc space-y-1 text-sm">
               <li>Check your internet connection</li>
               <li>Refresh the page</li>

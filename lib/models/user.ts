@@ -1,5 +1,4 @@
-import mongoose, { Schema, models, Model, model } from "mongoose";
-import { boolean } from "zod";
+import { Schema, models, model } from "mongoose";
 
 export interface IUser {
     name: string

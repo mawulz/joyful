@@ -22,14 +22,6 @@ export default function GlobalNotFound() {
             className={`${googleSansFlex.variable} min-h-screen h-full antialiased`}
         >
             <body className="min-h-screen flex flex-col justify-between bg-background text-foreground relative overflow-x-hidden selection:bg-secondary/30">
-                {/* <div
-          aria-hidden="true"
-          className="pointer-events-none absolute -top-24 -left-24 w-96 h-96 rounded-full bg-secondary/20 blur-3xl"
-        />
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-accent/20 blur-3xl"
-        /> */}
 
                 <header className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8 flex justify-center sm:justify-start">
                     <a
@@ -68,6 +60,7 @@ export default function GlobalNotFound() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto">
+                            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
                             <a
                                 href="/"
                                 className="w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-white font-semibold text-sm sm:text-base shadow-md shadow-primary/25 hover:bg-primary/90 transition-all duration-200 text-center"

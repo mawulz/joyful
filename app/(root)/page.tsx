@@ -5,7 +5,7 @@ import DonationVolunteerCard from "@/components/DonationVolunteerCard"
 import WhyWeExistCard from "@/components/WhyWeExist-Card"
 import { useRef } from "react"
 
-const page = () => {
+const Page = () => {
   const ref = useRef<HTMLElement | null>(null)
 
   const handleClick = () => {
@@ -37,4 +37,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

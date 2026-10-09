@@ -25,7 +25,7 @@ export async function POST(req: NextRequest){
         const LIMIT = 10
         const WINDOW_MS = 60 * 60 * 1000
 
-        const { success, remaining, resetTime } = rateLimit({
+        const { success, resetTime } = rateLimit({
             key: `volunteer-application:${session.user.id}`,
             limit: LIMIT,
             windowMs: WINDOW_MS

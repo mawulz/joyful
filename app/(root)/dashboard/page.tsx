@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Button, Card, Table } from "@heroui/react";
-import { Donation, DonationStatus, VolunteerDecision, VolunteerStatus, VolunteerApplication, DashboardData } from "@/lib/types/dashboard";
+import { Card } from "@heroui/react";
+import { Donation, VolunteerStatus, VolunteerApplication, DashboardData } from "@/lib/types/dashboard";
 import { DonationPanel } from "@/components/dashboard-panel/DonationPanel";
 import { VolunteerApplicationsPanel } from "@/components/dashboard-panel/VolunteerApplicationsPanel";
 

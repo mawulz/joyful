@@ -2,12 +2,11 @@ import { NextResponse, NextRequest } from "next/server";
 import { Types } from "mongoose";
 import { auth, getSession } from "@/lib/auth/auth";
 import connectDB from "@/lib/db";
-import { User } from "@/lib/models/user";
 import { Volunteer } from "@/lib/models/volunteer";
 import z from "zod";
 import { headers } from "next/headers";
 
-export async function GET(req: NextRequest){
+export async function GET(){
     try {
         const session = await getSession()
 
@@ -54,7 +53,7 @@ export async function GET(req: NextRequest){
         })
     } catch (error) {
         return NextResponse.json(
-            { message: 'Internal Server Error' },
+            { message: 'Internal Server Error', error },
             { status: 500 }
         )
     }

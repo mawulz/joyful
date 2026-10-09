@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { headers } from "next/headers";
 import { getSession } from "./lib/auth/auth"; 
 
 export default async function proxy(request: NextRequest) {

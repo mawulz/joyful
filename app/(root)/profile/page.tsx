@@ -11,7 +11,7 @@ import { AvatarCropModal } from "@/components/modal/AvatarCropModal"
 
 const MAX_AVATAR_BYTES = 1.5 * 1024 * 1024
 
-const page = () => {
+const Page = () => {
   const [profile, setProfile] = useState<UserProfile | null>(null)
   const [loading, setLoading] = useState(true)
 
@@ -332,4 +332,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

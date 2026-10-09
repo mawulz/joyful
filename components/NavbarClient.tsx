@@ -16,7 +16,7 @@ const navLinks = [
 ]
 
 const NavbarClient = () => {
-  const { data: session, isPending } = useSession()
+  const { data: session } = useSession()
 
   const user = session?.user
   const isAdmin = user?.role

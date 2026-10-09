@@ -1,4 +1,4 @@
-import mongoose, { Schema, models, Model } from "mongoose";
+import mongoose, { Schema, Model } from "mongoose";
 
 export type DonationStatus = "PENDING" | "SETTLEMENT" | "EXPIRED" | "FAILED"
 

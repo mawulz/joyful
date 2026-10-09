@@ -7,7 +7,7 @@ import Link from "next/link"
 import { useSession } from "@/lib/auth/auth-client"
 import { useEffect, useRef, useState } from "react"
 
-const page = () => {
+const Page = () => {
   const { data: session, isPending } = useSession()
   const [mounted, setMounted] = useState(false)
 
@@ -128,8 +128,8 @@ const page = () => {
             </div>
 
             <p className="text-primary text-center mt-8 lg:mt-10 max-w-lg">
-              "Bergabung dengan yayasan ini membuka mata saya bahwa hal kecil yang kita
-              lakukan bisa berdampak luar biasa besar bagi senyuman anak-anak."
+              &#34;Bergabung dengan yayasan ini membuka mata saya bahwa hal kecil yang kita
+              lakukan bisa berdampak luar biasa besar bagi senyuman anak-anak.&#34;
             </p>
           </div>
         </div>
@@ -138,4 +138,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
