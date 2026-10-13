@@ -9,16 +9,11 @@ import { useEffect, useRef, useState } from "react"
 
 const Page = () => {
   const { data: session, isPending } = useSession()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
 
   const isLoggedIn = !!session?.user
 
-  const showPending = !mounted || isPending
-  const showLoginOverlay = mounted && !isPending && !isLoggedIn
+  const showPending = isPending
+  const showLoginOverlay = !isPending && !isLoggedIn
 
   const ref = useRef<HTMLElement | null>(null)
 

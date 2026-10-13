@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
     } catch (error) {
         console.error("Failed to create donation:", error)
         return NextResponse.json(
-            { error: "Failed to create donation" },
+            { error: String(error) },
             { status: 500 }
         )
     }

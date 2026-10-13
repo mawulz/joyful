@@ -24,6 +24,7 @@ export default function GlobalNotFound() {
             <body className="min-h-screen flex flex-col justify-between bg-background text-foreground relative overflow-x-hidden selection:bg-secondary/30">
 
                 <header className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8 flex justify-center sm:justify-start">
+                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
                     <a
                         href="/"
                         className="inline-flex items-center gap-2 transition-transform hover:scale-105"
